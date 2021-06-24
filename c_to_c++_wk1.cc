@@ -6,11 +6,12 @@
 *   inline any short function
 */
 
-#include <cstdio.h>
+#include <iostream>
 const int N 40;
 
 using namespace :: std;
 
+// sum answers together
 void sum(int& p, int n, int d[])
 {
   p = 0;
@@ -20,7 +21,7 @@ void sum(int& p, int n, int d[])
 
 int main()
 {
-  auto accum = 0;
+  auto accum = 0; // auto will change to int
   auto data[N];
   for(int i = 0; i < N; ++i)
     data[i] = i;
